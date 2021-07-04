@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BtnManage.cs" />
+    <Compile Include="Assets\Scripts\StartManage.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:/2019.4.26f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

@@ -235,7 +235,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\uC2DC\uC791\uD654\uBA74\n"
 --- !u!222 &85460659
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -751,7 +751,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\uAC8C\uC784 \uACC4\uC18D \uC9C4\uD589"
 --- !u!222 &1476422933
 CanvasRenderer:
   m_ObjectHideFlags: 0
