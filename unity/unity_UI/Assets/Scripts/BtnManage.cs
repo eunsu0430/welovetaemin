@@ -5,54 +5,45 @@ using UnityEngine.SceneManagement;
 
 public class BtnManage : MonoBehaviour
 {
-    public GameObject stopcv;
-    public GameObject Topbar;
 
-    // public GameObject exppcv;
-    private bool pause = false;
-  //  public AudioSource btnclickSound;
-    private float fixedDeltatime;
+
     private StartManage startmg;
+    private fourGame fourgame;
 
     private void Awake()
     {
         {
-            this.fixedDeltatime = Time.fixedDeltaTime;
             startmg = FindObjectOfType<StartManage>();
+            //gpsmg = FindObjectOfType<GPSManage>();
+            fourgame = FindObjectOfType<fourGame>();
         }
     }
     void Update()
     {
-        if (pause)
-        {
-            Time.timeScale = 0;
-
-            Topbar.SetActive(false);
-            stopcv.SetActive(true);
-
-        }
+    
 
     }
-    public void GPSsceneBtn()
+    public void StartC_StartBtn()
     {
         SceneManager.LoadScene("GPSScene");
     }
-    public void restartBtn() //=> startScene
+    public void StartC_DeveloperBtn()
     {
-        //btnclickSound.Play();
-        if (Time.timeScale == 0)
-        {
-            stopcv.SetActive(false);
-            Topbar.SetActive(true);
-            Time.timeScale = 1f;
-
-            pause = false;
-
-        }
-        Time.fixedDeltaTime = this.fixedDeltatime * Time.timeScale;
-
+        startmg.developclick = false;
+        startmg.developer();
     }
-    public void QuitBTN()
+    public void StartC_ExitBtn()
+    {
+        startmg.exitclick = false;
+        startmg.exitapp();
+    }
+    public void eC_DC_BackBtn() /// developclick, exitclick 꺼지기
+    {
+        startmg.developclick = true;
+        startmg.exitclick = true;
+    }
+
+    public void ExitC_QuitBTN()
     {
         Application.Quit();
     }
@@ -62,26 +53,33 @@ public class BtnManage : MonoBehaviour
 
         SceneManager.LoadScene("StartScene");
     }
-    public void StopBtn()
+    /*public void restartBtn() //gpsmanage호출하는 버튼
+{
+
+
+}*/
+    /*public void StopBtn() //gps호출 버튼 멈추기
     {
        // btnclickSound.Play();
-        pause = true;
+        gpsmg.pause = true;
         
         //   Time.fixedDeltaTime = this.fixedDeltatime * Time.timeScale;
-    }
-    public void developerBtn()
+    }*/
+
+
+
+    public void minigameBtn()
     {
-        startmg.developclick = false;
-        startmg.developer();
+        fourgame.miniStart = true;
+        fourgame.startC.SetActive(false);
+        fourgame.DevelopC.SetActive(false);
+        fourgame.f_clover.SetActive(true);
+        fourgame.t_clover.SetActive(true);
+        fourgame.lucky.SetActive(false);
+        // fourgame.touchcontrol = false;
     }
-    public void exitClickBtn()
+    public void minigameExitBtn()
     {
-        startmg.exitclick = false;
-        startmg.exitapp();
-    }
-    public void startmgBtn()
-    {
-        startmg.developclick = true;
-        startmg.exitclick = true;
+        fourgame.miniStart = false;
     }
 }
