@@ -1,29 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class GPS : MonoBehaviour
+public class GPSManage : MonoBehaviour
 {
-    public GameObject stopcv;
-    public GameObject Topbar;
-    private float fixedDeltatime;
-    private bool pause = false;
+   // public GameObject stopcv;
+   // public GameObject Topbar;
+   /// private bool pause = false;
     // Start is called before the first frame update
+ 
 
     private void Awake()
     {
         {
-            this.fixedDeltatime = Time.fixedDeltaTime;
+        
+           
+
 
         }
     }
     void Start()
     {
+        
+       // _fadeInOut.FadeIN_List(fadeimg);
+       // fadeinout.SetActive(false);
 
     }
 
     // Update is called once per frame
-    void Update()
+ /*   void Update()
     {
         if (pause)
         {
@@ -46,5 +52,5 @@ public class GPS : MonoBehaviour
 
         }
         Time.fixedDeltaTime = this.fixedDeltatime * Time.timeScale;
-    }
+    }*/
 }

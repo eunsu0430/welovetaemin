@@ -25,7 +25,8 @@ public class BtnManage : MonoBehaviour
     }
     public void StartC_StartBtn()
     {
-        SceneManager.LoadScene("GPSScene");
+        // startmg.Loadscene("LoadingScene","GPSScene");
+        SceneManager.LoadScene("LoadingScene");
     }
     public void StartC_DeveloperBtn()
     {

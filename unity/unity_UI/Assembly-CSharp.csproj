@@ -64,7 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BtnManage.cs" />
+    <Compile Include="Assets\Scripts\FadeINOUT.cs" />
     <Compile Include="Assets\Scripts\GPSManage.cs" />
+    <Compile Include="Assets\Scripts\LoadingManage.cs" />
     <Compile Include="Assets\Scripts\StartManage.cs" />
     <Compile Include="Assets\Scripts\fourGame.cs" />
     <Compile Include="Assets\Scripts\fourTouch.cs" />

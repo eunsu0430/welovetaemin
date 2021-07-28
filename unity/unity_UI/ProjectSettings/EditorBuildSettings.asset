@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GPSScene.unity
     guid: f9c95a508e4b8614e90997f71fefa74f
+  - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity
+    guid: de17bcbb02fb33245b30921b866a700f
   m_configObjects: {}
