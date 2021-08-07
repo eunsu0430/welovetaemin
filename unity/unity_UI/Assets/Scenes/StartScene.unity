@@ -1226,12 +1226,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58fab6e6cec544f41b11959ea90f258a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fadeInOut: {fileID: 0}
   developcv: {fileID: 1449757505}
   exitcv: {fileID: 735187502}
   developclick: 0
   exitclick: 0
-  fadeinout: {fileID: 0}
 --- !u!4 &647036694
 Transform:
   m_ObjectHideFlags: 0

@@ -16,6 +16,12 @@ public class fourGame : MonoBehaviour
     float fourgametime = 0.0f;
     float threegametime = 0.0f;
     public int gamecount;
+    private GameObject F_CLOVER;
+    private GameObject T_CLOVER;
+    private GameObject LUCKY_CLOVER;
+    private bool F_SET = false;
+    private bool T_SET = false;
+    private bool L_SET = false;
 
     void Start()
     {
@@ -57,22 +63,53 @@ public class fourGame : MonoBehaviour
           
 
         }
+       if (F_SET == true)
+        {
+
+            //Debug.Log("f localposition" + F_CLOVER.transform.localPosition.y);
+            //Debug.Log("f position" + F_CLOVER.transform.position.y);
+            if (F_CLOVER.transform.position.y < 390.0f)
+            {
+                Debug.Log("ssssssssssssssssssss");
+            }
+         //   Destroy(F_CLOVER, 3.0f);
+               
+           
+        }
+        if (T_SET == true)
+        {
+            
+                Destroy(T_CLOVER, 3.0f);
+                T_SET = false;
+
+        }
+        if (L_SET == true)
+        {
+       
+                Destroy(LUCKY_CLOVER, 3.0f);
+                L_SET = false;
+            
+        }
 
           
     }
     public void makeFclover()
     {
-        Vector3 cloverM = new Vector3(Random.Range(-60.0f, 60.0f), 200.0f, 250);
+        Vector3 cloverM = new Vector3(Random.Range(-120.0f, 120.0f), 400.0f, 500);
         fourrg.gravityScale = Random.Range(1, 10);
-        Instantiate(f_clover, cloverM, Quaternion.identity);
+       F_CLOVER = Instantiate(f_clover, cloverM, Quaternion.identity);
         
+     
+        F_SET = true;
         fourgametime = 0;
     }
     public void makeTclover()
     {
-        Vector3 threeM = new Vector3(Random.Range(-60.0f, 60.0f), 200.0f, 250);
+        Vector3 threeM = new Vector3(Random.Range(-120.0f, 120.0f), 400.0f, 500);
         threerg.gravityScale = Random.Range(7, 15);
-         Instantiate(t_clover, threeM, Quaternion.identity);
+        T_CLOVER= Instantiate(t_clover, threeM, Quaternion.identity);
+
+        T_SET = true;
         threegametime = 0;
 
 
@@ -94,9 +131,10 @@ public class fourGame : MonoBehaviour
         int i = 0;
         while (i < 24)
         {
-            Vector3 luckyM = new Vector3(Random.Range(-60.0f, 60.0f), 200.0f, 250);
+            Vector3 luckyM = new Vector3(Random.Range(-120.0f, 120.0f), 400.0f, 500);
             luckyrg.gravityScale = Random.Range(6, 10);
-            Instantiate(lucky, luckyM, Quaternion.identity);
+            LUCKY_CLOVER=Instantiate(lucky, luckyM, Quaternion.identity);
+            L_SET = true;
             yield return new WaitForSeconds(1);
             i++;
             
