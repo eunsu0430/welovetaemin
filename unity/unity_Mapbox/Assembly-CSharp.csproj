@@ -56,7 +56,6 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Platform\Response.cs" />
      <Compile Include="Assets\MapboxAR\Unity\Ar\SimpleAutomaticSynchronizationContext.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\SubLayerCustomStyleAtlasWithColorPallete.cs" />
-     <Compile Include="Assets\UnityARInterface\ARRemote\Scripts\ARRemoteEditor.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\MapboxDataProperty.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Utils\Vector2d\Vector2d.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Utils\Constants.cs" />
@@ -102,7 +101,6 @@
      <Compile Include="Assets\UnityARInterface\Scripts\ARBase.cs" />
      <Compile Include="Assets\Mapbox\Unity\MapboxAccess.cs" />
      <Compile Include="Assets\Mapbox\Examples\Scripts\ImmediatePositionWithLocationProvider.cs" />
-     <Compile Include="Assets\GoogleARCore\Examples\ComputerVision\Scripts\ComputerVisionController.cs" />
      <Compile Include="Assets\UnityARInterface\Scripts\ARMessageIds.cs" />
      <Compile Include="Assets\UnityARKitPlugin\UnityARKitPluginSettings.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\MapLocationOptions.cs" />
@@ -285,7 +283,6 @@
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerModeling.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\Conversions.cs" />
      <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARAnchor.cs" />
-     <Compile Include="Assets\UnityARInterface\ARRemote\Scripts\ARRemoteEditorInterface.cs" />
      <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARKitLightManager.cs" />
      <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARFrame.cs" />
      <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Helpers\UnityARAmbient.cs" />
@@ -322,7 +319,6 @@
      <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\ApiApkInstallationStatus.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\SubLayerLightStyle.cs" />
      <Compile Include="Assets\MapboxAR\Examples\ARTabletop\Scripts\UpdateShaderCoordinatesByARPlane.cs" />
-     <Compile Include="Assets\UnityARInterface\Scripts\ARCoreInterface.cs" />
      <Compile Include="Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\ARRect.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Platform\Cache\ICache.cs" />
      <Compile Include="Assets\Mapbox\Unity\LayerProperties\ImageryLayerProperties.cs" />
@@ -528,7 +524,6 @@
      <Compile Include="Assets\Mapbox\Examples\Scripts\ForwardGeocodeUserInput.cs" />
      <Compile Include="Assets\GoogleARCore\SDK\Scripts\TrackedPlane.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\MeshModifiers\ReplaceFeatureModifier.cs" />
-     <Compile Include="Assets\UnityARInterface\Scripts\ARKitInterface.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerExtrusionOptions.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\GameObjectModifiers\SpawnInsideModifier.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\GameObjectModifiers\TagModifier.cs" />
@@ -556,7 +551,6 @@
      <Compile Include="Assets\Mapbox\Unity\Location\AngleSmoothing\AngleSmoothingLowPass.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Platform\SQLite\SQLite.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerRealisticStyle.cs" />
-     <Compile Include="Assets\GoogleARCore\SDK\Scripts\ARCoreBackgroundRenderer.cs" />
      <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\ApiTrackedPointOrientationMode.cs" />
      <Compile Include="Assets\GoogleARCore\SDK\Scripts\Api\ApiLightEstimationMode.cs" />
      <Compile Include="Assets\Mapbox\Unity\Map\TileProviders\GlobeTileProvider.cs" />
